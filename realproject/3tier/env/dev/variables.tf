@@ -9,10 +9,16 @@ variable "cidr_block" {
   type = string
   description = "the CIDR block for the new VPC"
 }
+
+variable "outside_cidr_block" {
+  type = string
+  description = "traffic coming from outside"
+}
 variable "web_subnet_cidr_block" {
   type = list(string)
   description = "the list of CIDR blocks for the web subnets"
 }
+
 variable "app_subnet_cidr_block" {
   type = list(string)
   description = "the list of CIDR blocks for the application subnets"
