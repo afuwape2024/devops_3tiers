@@ -1,3 +1,8 @@
 
 3tier/
 3tier/
+
+# Terraform local artifacts
+**/.terraform/
+.tfstate
+*.tfstate.*
