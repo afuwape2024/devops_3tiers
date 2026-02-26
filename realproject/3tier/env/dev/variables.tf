@@ -32,6 +32,14 @@ variable "availability_zones" {
   description = "the list of availability zones to use for the subnets"
 }
 
+variable "image_id" {
+  type = string
+  description = "the image was selected from us-east-2 region"
+}
+
+variable "instance_type" {
+  type = string 
+}
 
 
 
