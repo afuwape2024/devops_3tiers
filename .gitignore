@@ -1,8 +1,8 @@
-
-3tier/
-3tier/
-
 # Terraform local artifacts
 **/.terraform/
 .tfstate
 *.tfstate.*
+
+# Local project archives
+realproject/3tier.zip
+realproject/3tier.tar.gz

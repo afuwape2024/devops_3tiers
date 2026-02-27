@@ -48,7 +48,7 @@ variable "target_group_arn" {
 }
 
 variable "min_size" {
-  default = 1
+  default = 2
 }
 
 variable "max_size" {
@@ -56,5 +56,5 @@ variable "max_size" {
 }
 
 variable "desired_capacity" {
-  default = 1
+  default = 2
 }

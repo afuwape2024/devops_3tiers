@@ -31,6 +31,16 @@ resource "aws_network_acl" "web_nacl" {
     to_port    = 65535
   }
 
+  # allow the SSH Inbound
+  ingress {
+    rule_no    = 130
+    action     = "allow"
+    protocol   = "tcp"
+    cidr_block = var.outside_cidr_block
+    from_port  = 22
+    to_port    = 22
+  }
+
   # Outbound HTTP
   egress {
     rule_no    = 100

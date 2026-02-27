@@ -74,4 +74,3 @@ module "database_mysql" {
   database_security_group = module.security_group.database_security_group
   db_subnet               = module.subnet.db_subnet
 }
-

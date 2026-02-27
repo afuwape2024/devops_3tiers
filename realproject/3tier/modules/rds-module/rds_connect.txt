@@ -1,0 +1,9 @@
+# Connect Ubuntu EC2 to RDS MySQL
+sudo apt update
+sudo apt install mysql-client -y
+
+# Generic form
+mysql -h RDS_ENDPOINT -u dbadmin -p
+
+# Example endpoint from this stack
+mysql -h database-mysql-primary.cxmk4gsmkxas.us-east-2.rds.amazonaws.com -u dbadmin -p
