@@ -69,5 +69,9 @@ module "autoscaling" {
   target_group_arn      = module.load_balancer.web_target_group
 }
 
-
+module "database_mysql" {
+  source = "../../modules/rds-module"
+  database_security_group = module.security_group.database_security_group
+  db_subnet               = module.subnet.db_subnet
+}
 
